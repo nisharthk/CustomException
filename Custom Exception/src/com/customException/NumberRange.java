@@ -8,9 +8,9 @@ public class NumberRange {
 			System.out.println(" 	Custom Exception Example\n");
 			System.out.print("Enter a Number between 0 and 100 : ");
 			Scanner input = new Scanner(System.in);
-			int x = input.nextInt();
+			int num = input.nextInt();
 			input.close();
-			if (x < 0 || x > 100)
+			if (num < 0 || num > 100)
 				throw new NumberRangeException();
 			else
 				System.out.println("\nThe number entered is within range!");
